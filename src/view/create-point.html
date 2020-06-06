@@ -11,9 +11,7 @@
 {% endblock styles %}
 
 {% block content %}
-
 {% include "partials/page-header.html" %}
-
 <form action="">
 
     <h1>Cadastro do ponto de coleta</h1>
@@ -23,9 +21,18 @@
             <h2>Dados da entdidade</h2>
         </legend>
 
-        <div class="field">
-            <label for="name">Nome da entdidade</label>
-            <input type="text" name="name" required>
+        <div class="field-group">
+            <div class="field">
+                <label for="name">Nome da entididade</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="field">
+                <label for="name">Imagem da entididade</label>
+                <input type="url"
+                       name="image" 
+                       placeholder="http//"
+                       required="required">
+            </div>
         </div>
 
         <div class="field-group">
@@ -64,6 +71,7 @@
     <fieldset>
         <legend>
             <h2>Ítens de coleta</h2>
+            <span>Selecione um ou mais itens abaixo</span>
         </legend>
 
         <div class="items-grid">
@@ -103,9 +111,7 @@
     </fieldset>
     <button type="submit">Cadastrar ponto de coleta</button>
 </form>
-
 {% endblock content %}
-
 
 {% block scripts %}
 <script src="js/create-point.js"></script>

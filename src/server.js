@@ -1,7 +1,7 @@
 const express = require("express");
 const server = express();
 
-// COnfiguração da pasta Public
+// Configuração da pasta Public
 server.use(express.static("public"));
 
 // Template Engine

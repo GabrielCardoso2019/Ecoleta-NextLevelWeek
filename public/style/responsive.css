@@ -39,11 +39,11 @@
     }
 
     #page-home header a {
-        position: absolute;
+        /* position: absolute; */
         bottom: 28px;
 
         left: 50%;
-        transform: translateX(-50%);
+        /* transform: translateX(-50%); */
     }
 
     #page-home header a span {
@@ -60,6 +60,6 @@
 
 @media (max-height: 760px) {
     #page-home {
-        background-position-y: 200px;
+        background-position-y: 100px;
     }
 }
